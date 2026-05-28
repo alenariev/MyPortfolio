@@ -6,7 +6,9 @@
 
 ## Использованный стек
 •   Frontend: HTML5, CSS3 (переменные, кастомная сетка Grid/Flexbox, адаптивная верстка под мобильные устройства), TypeScript, Vite (инструмент сборки).
+
 •   Backend (API): Python (Serverless Functions на платформе Vercel), Flask. Обработчик находится в папке api/contact.py.
+
 •   Интеграция сторонних API: Асинхронное взаимодействие через Fetch API (JSON-формат), Telegram Bot API (для мгновенных уведомлений), OpenAI API (для умных автоответов).
 
 ## Реализация формы обратной связи
