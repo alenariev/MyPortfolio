@@ -55,11 +55,9 @@ def generate_ai_reply(user_name, user_comment):
     return (f"Здравствуйте, {user_name}! Спасибо за проявленный интерес. Ваше сообщение "
             f"успешно получено. Я ознакомлюсь с ним и свяжусь с вами в ближайшее время!")
 
-
 def send_email(to_email, subject, body_text):
-    """Отправка Email через SMTP с шифрованием SSL"""
     if not SENDER_EMAIL or not SENDER_PASSWORD:
-        print("Внимание: Настройки SMTP не заданы. Проверьте переменные окружения.")
+        print("Внимание: Настройки SMTP не заданы.")
         return False
     try:
         msg = MIMEMultipart()
@@ -68,12 +66,14 @@ def send_email(to_email, subject, body_text):
         msg['Subject'] = subject
         msg.attach(MIMEText(body_text, 'plain', 'utf-8'))
 
-        with smtplib.SMTP_SSL(SMTP_SERVER, SMTP_PORT, timeout=5) as server:
+        print(f"Попытка подключения к {SMTP_SERVER}:{SMTP_PORT}...")
+        with smtplib.SMTP_SSL(SMTP_SERVER, SMTP_PORT, timeout=10) as server:
             server.login(SENDER_EMAIL, SENDER_PASSWORD)
             server.sendmail(SENDER_EMAIL, [to_email], msg.as_string())
+        print("Письмо успешно отправлено!")
         return True
     except Exception as e:
-        print(f"Ошибка отправки Email: {e}")
+        print(f"КРИТИЧЕСКАЯ ОШИБКА отправки Email: {str(e)}")
         return False
 
 @app.route('/api/contact', methods=['POST'])
