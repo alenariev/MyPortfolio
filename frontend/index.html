@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alena Riev | Full-Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Шторка -->
+    <div class="curtain-loader">
+      <div class="curtain-logo">PORTFOLIO</div>
+    </div>
+
+    <!-- Шапка -->
+    <header class="main-header">
+        <div class="header-content">
+            <div class="logo">ALENA RIEV</div>
+            <nav class="nav">
+                <a href="#about">Профиль</a>
+                <a href="#education">Опыт</a>
+                <a href="#portfolio">Проекты</a>
+                <a href="#contact" class="btn-nav">Связаться</a>
+            </nav>
+        </div>
+      </header>
+      
+    <section class="hero-section">
+      <div class="app-container grid-hero">
+        <div class="hero-text">
+          <span class="badge">Full-Stack Python / TS Developer</span>
+          <h1>Проектирование и разработка <span class="highlight">веб-систем</span></h1>
+          <p class="hero-subtitle">
+            Сочетание коммерческого опыта в IT, базы веб-технологий (Django, FastAPI, TypeScript) и лингвистического бэкграунда для проектирования архитектуры данных и интеграций.
+          </p>
+          <div class="hero-actions">
+            <a href="#portfolio" class="btn btn-primary">Смотреть проекты</a>
+            <a href="https://github.com/alenariev" target="_blank" class="btn btn-secondary">
+              GITHUB ПРОФИЛЬ</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="photo-frame">
+            <img src="/photo.jpg" alt="Alena Riev" class="hero-photo">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section bg-beige">
+      <div class="app-container">
+        <h2 class="section-title">Специализация</h2>
+        <div class="card-grid">
+          <div class="card">
+            <h3>Backend</h3>
+              <p>Проектирование реляционных баз данных (PostgreSQL, SQLite), создание чистых API на Flask, Django и FastAPI. Интеграция серверной логики и тонкая настройка CORS и безопасности.</p>
+          </div>
+          <div class="card">
+            <h3>Frontend</h3>
+              <p>Разработка интерфейсов с акцентом на чистый TypeScript, современные сборщики (Vite) и адаптивную верстку. Создание удобных интерактивных форм с асинхронной обработкой.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section bg-white">
+      <div class="app-container">
+        <h2 class="section-title">Образование и опыт</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-date">2018-2022</div>
+            <div class="timeline-content">
+              <h3>Высшее лингвистическое образование</h3>
+              <p>Анализ знаковых систем, семантика, структурирование и обработка текстовой информации на профессиональном уровне.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2022-2024</div>
+            <div class="timeline-content">
+              <h3>Работа в IT. Lokalise manager</h3>
+              <p>
+                Работа в техническом цикле разработки: взаимодействие с командой разработчиков через <strong>GitLab</strong>. Управление переводами и их перенос в <strong>Lokalise</strong>, контроль корректности отображения интерфейсов на разных языках.
+                Работа с данными в формате <strong>JSON</strong> (конфигурации, отчеты), базовая верстка и правка структур на <strong>HTML</strong>.
+              </p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-date">2025-2026</div>
+            <div class="timeline-content">
+              <h3>Python Full-Stack Developer</h3>
+              <p>Интенсивное обучение: от проектирования баз данных до создания полноценных веб-приложений (Django, FastAPI, TypeScript).</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <section id="portfolio" class="section bg-beige">
+      <div class="app-container">
+        <h2 class="section-title">Проекты</h2>
+          <div class="project-card">
+            <span class="project-tag">Python / Django / JS</span>
+            <h3>NutriTarget — Интеллектуальный расчет КБЖУ с подбором блюд</h3>
+            <p>Веб-приложение для автоматического расчета индивидуальной нормы макронутриентов на основе параметров и предпчтений пользователя. Спроектирована база данных продуктов, реализован личный кабинет, адаптивная коллекция рецептов и система генерации меню с учетом аллергий.</p>
+            <a href="https://github.com/alenariev/nutritarget" target="_blank" class="gold-link">Исходный код на GitHub →</a>
+          </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section bg-white">
+      <div class="app-container">
+        <div class="contact-container">
+          <div class="contact-info">
+            <h2>Обратная связь</h2>
+            <p>Рассматриваю предложения на позицию Junior+ Full-Stack / Backend разработчика. Готова обсудить задачи и требования. Возможен удаленный формат работы.</p>
+            <div class="contact-methods">
+              <p><strong>Telegram:</strong> <a href="https://t.me/alenariev" target="_blank">@alenariev</a></p>
+              <p><strong>Email:</strong> <a href="mailto:alenariev25@yandex.ru">alenariev25@yandex.ru</a></p>
+            </div>
+          </div>
+
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="name">Имя</label>
+              <input type="text" id="name" required placeholder="">
+            </div>
+            <div class="form-group">
+              <label for="phone">Телефон</label>
+              <input type="tel" id="phone" required placeholder="">
+            </div>
+            <div class="form-group">
+              <label for="email">Электронная почта</label>
+              <input type="email" id="email" required placeholder="">
+            </div>
+            <div class="form-group">
+              <label for="message">Сообщение</label>
+              <textarea id="message" required placeholder=""></textarea>
+            </div>
+            <button type="submit" id="submitBtn" class="btn btn-primary">
+              <span class="btn-text">Отправить сообщение</span>
+              <div class="loader hidden"></div>
+            </button>
+            <div id="formResponse" class="form-response hidden"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

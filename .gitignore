@@ -1,0 +1,22 @@
+# Node.js (Frontend)
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.eslintcache
+
+# Python (Backend)
+api/__pycache__/
+api/.env
+api/venv/
+.venv/
+*.pyc
+
+# System & IDE files
+.DS_Store
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.vercel
