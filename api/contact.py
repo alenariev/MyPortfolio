@@ -94,12 +94,12 @@ def contact_form():
         ai_reply = generate_ai_reply(name, message)
 
         tg_text = (
-            f"📬 *Новая заявка с портфолио!*\n\n"
+            f"*Новая заявка с портфолио!*\n\n"
             f"*Имя:* {name}\n"
             f"*Телефон:* {phone}\n"
             f"*Email:* {email}\n"
             f"*Сообщение:* {message if message else 'Без комментария'}\n\n"
-            f"🤖 *AI Автоответ пользователя:* \n_{ai_reply}_"
+            f"*AI Автоответ пользователя:* \n_{ai_reply}_"
         )
         
         if TELEGRAM_TOKEN and TELEGRAM_CHAT_ID:
@@ -129,7 +129,7 @@ def contact_form():
         user_body = (
             f"Здравствуйте, {name}!\n\n"
             f"Спасибо, что заполнили форму на моем сайте-портфолио.\n\n"
-            f"🤖 Вот что думает мой AI-ассистент о вашем сообщении:\n"
+            f"Вот что думает мой AI-ассистент о вашем сообщении:\n"
             f"\"{ai_reply}\"\n\n"
             f"---\n"
             f"С уважением,\n"

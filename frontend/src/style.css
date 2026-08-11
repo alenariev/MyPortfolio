@@ -528,3 +528,46 @@ h1 {
         margin-left: 0;
     }
 }
+/* Стили для кнопок дипломов */
+.docs-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.btn-doc {
+    padding: 8px 16px;
+    border-radius: 2px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.btn-doc-gold {
+    border: 1px solid var(--gold-main);
+    color: var(--gold-main);
+    background-color: transparent;
+}
+
+.btn-doc-gold:hover {
+    background-color: var(--gold-main);
+    color: var(--bg-white);
+    transform: translateY(-2px);
+}
+
+.btn-doc-muted {
+    border: 1px solid var(--border-light);
+    color: var(--text-muted);
+}
+
+.btn-doc-muted:hover {
+    border-color: var(--gold-main);
+    color: var(--gold-main);
+}
