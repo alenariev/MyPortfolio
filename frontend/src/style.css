@@ -495,42 +495,70 @@ h1 {
     color: #ef4444;
 }
 
-/* --- АДАПТИВНОСТЬ --- */
+/* --- АДАПТИВНОСТЬ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ --- */
+
+/* Логика для компьютера (экраны больше 900px) */
+@media (min-width: 901px) {
+    .card-grid .card:last-child {
+        grid-column: 1 / -1;
+        max-width: 520px;
+        margin: 0 auto;
+        width: 100%;
+    }
+}
+
+/* Логика для смартфонов и планшетов (экраны до 900px) */
 @media (max-width: 900px) {
     .grid-hero {
         grid-template-columns: 1fr;
         gap: 40px;
     }
+    
     .hero-text {
         text-align: center;
     }
+    
     .hero-actions {
         justify-content: center;
     }
+    
     .hero-image {
         order: -1;
     }
-    .avatar-circle {
-        margin-left: initial;
+
+    /* Карточки ровно в 1 колонку на мобилке */
+    .card-grid {
+        grid-template-columns: 1fr !important;
+        gap: 20px;
     }
 
-    .card-grid, .contact-container {
+    .card-grid .card:last-child {
+        grid-column: auto !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .contact-container {
         grid-template-columns: 1fr;
         gap: 40px;
     }
+
     h1 {
-        font-size: 36px;
+        font-size: 32px;
     }
+
     .header-content {
         flex-direction: column;
         gap: 20px;
     }
+
     .nav {
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap;        
         justify-content: center;
         gap: 15px;
     }
+
     .nav a {
         margin-left: 0;
     }
