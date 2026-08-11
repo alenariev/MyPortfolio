@@ -280,8 +280,15 @@ h1 {
 
 .card-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+}
+
+/* Это правило растянет третий элемент на всю ширину сетки, если их всего три */
+.card-grid .card:last-child {
+    grid-column: span 2; /* Растягивает на 2 колонки */
+    max-width: 50%;      /* Делает его ширину равной одной колонке */
+    margin: 0 auto;      /* Центрирует блок */
 }
 
 .card, .project-card {
