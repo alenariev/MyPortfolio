@@ -6,10 +6,11 @@
     <title>Alena Riev</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
   </head>
   <body>
-    <!-- Шторка -->
+    <!-- Шторка загрузки -->
     <div class="curtain-loader">
       <div class="curtain-logo">PORTFOLIO</div>
     </div>
@@ -25,20 +26,20 @@
                 <a href="#contact" class="btn-nav">Связаться</a>
             </nav>
         </div>
-      </header>
-      
+    </header>
+
+    <!-- Главный экран -->
     <section class="hero-section">
       <div class="app-container grid-hero">
         <div class="hero-text">
-          <span class="badge">IT Specialist | Full-Stack Developer | AI & Localization Expert</span>
-          <h1>Проектирование и разработка <span class="highlight">веб-систем</span></h1>
+          <span class="badge">Technical Project Manager</span>
+          <h1>Управление IT-проектами на стыке бизнеса и <span class="highlight">инженерии</span></h1>
           <p class="hero-subtitle">
-            Сочетание коммерческого опыта в IT, базы веб-технологий (Django, FastAPI, TypeScript) и лингвистического бэкграунда для проектирования архитектуры данных, интеграций и создания технической документации.
+            Управляю IT-проектами от идеи до финального запуска. Связываю продуктовые задачи с технической реализацией: понимаю логику REST API, работаю с базами данных, веду задачи в Jira и создаю прозрачные процессы без срывов дедлайнов.
           </p>
           <div class="hero-actions">
-            <a href="#portfolio" class="btn btn-primary">Смотреть проекты</a>
-            <a href="https://github.com/alenariev" target="_blank" class="btn btn-secondary">
-              Github профиль</a>
+            <a href="#portfolio" class="btn btn-primary">Посмотреть проекты</a>
+            <a href="https://github.com/alenariev" target="_blank" rel="noopener" class="btn btn-secondary">GitHub Профиль</a>
           </div>
         </div>
         <div class="hero-image">
@@ -49,114 +50,145 @@
       </div>
     </section>
 
+    <!-- Специализация -->
     <section id="about" class="section bg-beige">
       <div class="app-container">
         <h2 class="section-title">Специализация</h2>
         <div class="card-grid">
+          
           <div class="card">
-            <h3>Backend</h3>
-              <p>Проектирование реляционных баз данных (PostgreSQL, SQLite), создание чистых API на Flask, Django и FastAPI. Интеграция серверной логики и тонкая настройка CORS и безопасности.</p>
+            <h3>1. Process Management</h3>
+            <p>
+              Координация кросс-функциональных команд. Внедрение и ведение Agile-процессов (Scrum, Kanban), управление бэклогом, декомпозиция задач и планирование спринтов. Выстроенный релизационный цикл без срывов дедлайнов.
+            </p>
           </div>
+
           <div class="card">
-            <h3>Frontend</h3>
-              <p>Разработка интерфейсов с акцентом на чистый TypeScript, современные сборщики (Vite) и адаптивную верстку. Создание удобных интерактивных форм с асинхронной обработкой.</p>
+            <h3>2. Technical &amp; System Background</h3>
+            <p>
+              Глубокое понимание веб-архитектуры и жизненного цикла разработки. Понимание работы REST API, асинхронности, баз данных (PostgreSQL/SQL), верстки и формата JSON/XML.
+            </p>
           </div>
+
           <div class="card">
-            <h3>AI & Technical Writing</h3>
-              <p>Проектирование системных промптов, работа с LLM (Claude, Cursor, OpenAI API, ChatGPT). Создание баз знаний, регламентов и технической документации (Docs-as-code, Confluence, Markdown). Оптимизация бизнес-процессов через нейросети.</p>
+            <h3>3. Technical Analysis &amp; Documentation</h3>
+            <p>
+              Ведение проектной и технической базы знаний в Confluence. Внедрение AI-инструментов (Claude, ChatGPT) для оптимизации менеджмента.
+            </p>
           </div>
+
         </div>
       </div>
     </section>
 
+    <!-- Опыт и развитие -->
     <section id="education" class="section bg-white">
       <div class="app-container">
-        <h2 class="section-title">Образование и опыт</h2>
+        <h2 class="section-title">Опыт и Профессиональный трек</h2>
         <div class="timeline">
+          
           <div class="timeline-item">
-            <div class="timeline-date">2018-2022</div>
+            <div class="timeline-date">2022 — 2024</div>
             <div class="timeline-content">
-              <h3>Высшее лингвистическое образование</h3>
-              <p>Анализ знаковых систем, семантика, структурирование и обработка текстовой информации на профессиональном уровне.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-date">2022-2024</div>
-            <div class="timeline-content">
-              <h3>Работа в IT. Lokalise Lead</h3>
+              <h3>Lokalise Manager — «Купибилет»</h3>
               <p>
-                Работа в техническом цикле разработки: взаимодействие с командой разработчиков через <strong>GitLab</strong>. Управление переводами и их перенос в <strong>Lokalise</strong>, контроль корректности отображения интерфейсов на разных языках.
-                Работа с данными в формате <strong>JSON</strong> (конфигурации, отчеты), базовая верстка и правка структур на <strong>HTML</strong>.
-                Разработка технической документации и гайдов для разработчиков в <strong>Confluence</strong>.
+                Управление процессами и релизами в крупном TravelTech-продукте. Оргструктура и поставка задач для команд. Настройка и ведение процессов в <strong>Jira, Confluence, GitLab, Lokalise</strong>. Контроль интеграций и создание технической документации для команд разработки.
               </p>
             </div>
           </div>
+
           <div class="timeline-item">
-            <div class="timeline-date">2025-2026</div>
+            <div class="timeline-date">2025 — 2026</div>
             <div class="timeline-content">
-              <h3>Python Full-Stack Developer</h3>
-              <p>Интенсивное обучение: от проектирования баз данных до создания полноценных веб-приложений (Django, FastAPI, TypeScript).</p>
+              <h3>Engineering &amp; System Design Deep-Dive</h3>
+              <p>
+                Углубление в технический стек: проектирование реляционных баз данных (PostgreSQL), разработка REST API на Python (FastAPI/Django) и системный анализ архитектурных решений.
+              </p>
               <div class="docs-actions">
                 <a href="/diploma-top.jpeg" target="_blank" class="btn-doc btn-doc-gold">
-                  <span>📄</span> Посмотреть диплом (Академия ТОП)
+                  <span>🎓</span> Диплом: Веб-разработка (Академия ТОП)
                 </a>
+              </div>
             </div>
           </div>
+
+          <div class="timeline-item">
+            <div class="timeline-date">2018 — 2022</div>
+            <div class="timeline-content">
+              <h3>Высшее лингвистическое образование</h3>
+              <p>
+                Системный анализ знаковых систем, структура данных, технический перевод и деловая коммуникация на русском и английском (B2+) языках.
+              </p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
-        <section id="portfolio" class="section bg-beige">
+
+    <!-- Проекты и системные кейсы -->
+    <section id="portfolio" class="section bg-beige">
       <div class="app-container">
         <h2 class="section-title">Проекты</h2>
+
           <div class="project-card">
-            <span class="project-tag">Python / Django / JS</span>
-            <h3>NutriTarget — Интеллектуальный расчет КБЖУ с подбором блюд</h3>
-            <p>Веб-приложение для автоматического расчета индивидуальной нормы макронутриентов на основе параметров и предпчтений пользователя. Спроектирована база данных продуктов, реализован личный кабинет, адаптивная коллекция рецептов и система генерации меню с учетом аллергий.</p>
-            <a href="https://github.com/alenariev/nutritarget" target="_blank" class="gold-link">Код на GitHub →</a>
+            <span class="project-tag">High-Load API / System Architecture / PostgreSQL</span>
+            <h3>Tickets Service — Архитектура High Load API</h3>
+            <p>
+              Проектирование и реализация бэкенд-сервиса, оптимизированного для работы с миллионными массивами данных. Индексация БД, оптимизация SQL-запросов и построение отказоустойчивой структуры API.
+            </p>
+            <a href="https://github.com/alenariev/tickets_service" target="_blank" rel="noopener" class="gold-link">Архитектура и код на GitHub &rarr;</a>
           </div>
+
           <div class="project-card">
-            <span class="project-tag">TS / React/Vite / Vercel</span>
-            <h3>FastAPI AI-Feedback Service: Personal Brand Platform</h3>
-            <p>Асинхронный сервис с интеграцией AI API и автоматизацией через Telegram.</p>
-            <a href="https://github.com/alenariev/backend-test" target="_blank" class="gold-link">Код на GitHub →</a>
+            <span class="project-tag">Full-Stack System Design / Python / Django</span>
+            <h3>NutriTarget — Продуктовый сервисный модуль</h3>
+            <p>
+              Проектирование и разработка веб-сервиса расчета КБЖУ с нуля: реляционная БД продуктов, бизнес-логика учета аллергенов, пользовательские сценарии и REST API взаимодействия.
+            </p>
+            <a href="https://github.com/alenariev/nutritarget" target="_blank" rel="noopener" class="gold-link">Архитектура и код на GitHub &rarr;</a>
           </div>
+
           <div class="project-card">
-            <span class="project-tag">Python / FastAPI / PostgreSQL / Optimization</span>
-            <h3>Tickets Service — High Load API</h3>
-            <p>Проект по работе с большими данными. Реализовала бэкенд-систему, оптимизированную для мгновенного поиска и фильтрации среди 1 000 000+ заявок.</p>
-            <a href="https://github.com/alenariev/tickets_service" target="_blank" class="gold-link">Код на GitHub →</a>
+            <span class="project-tag">AI Integration / Async Service / Telegram API</span>
+            <h3>FastAPI AI-Feedback Service</h3>
+            <p>
+              Микросервисная архитектура с асинхронной интеграцией OpenAI API для обработки обратной связи в реальном времени и автоматизации коммуникаций.
+            </p>
+            <a href="https://github.com/alenariev/backend-test" target="_blank" rel="noopener" class="gold-link">Архитектура и код на GitHub &rarr;</a>
           </div>
+
       </div>
     </section>
 
+    <!-- Форма контактов -->
     <section id="contact" class="section bg-white">
       <div class="app-container">
         <div class="contact-container">
           <div class="contact-info">
-            <h2>Обратная связь</h2>
-            <p>Рассматриваю предложения в сфере веб-разработки, технической документации и AI-интеграций.</p>
+            <h2>Связаться со мной</h2>
+            <p>Открыта к предложениям на позиции <strong>IT Project Manager</strong>.</p>
             <div class="contact-methods">
-              <p><strong>Telegram:</strong> <a href="https://t.me/alenariev" target="_blank">@alenariev</a></p>
+              <p><strong>Telegram:</strong> <a href="https://t.me/alenariev" target="_blank" rel="noopener">@alenariev</a></p>
               <p><strong>Email:</strong> <a href="mailto:alenariev25@yandex.ru">alenariev25@yandex.ru</a></p>
             </div>
           </div>
-
           <form id="contactForm" class="contact-form">
             <div class="form-group">
               <label for="name">Имя</label>
-              <input type="text" id="name" required placeholder="">
+              <input type="text" id="name" required placeholder="Введите ваше имя">
             </div>
             <div class="form-group">
               <label for="phone">Телефон</label>
-              <input type="tel" id="phone" required placeholder="">
+              <input type="tel" id="phone" required placeholder="+7 (999) 000-00-00">
             </div>
             <div class="form-group">
               <label for="email">Электронная почта</label>
-              <input type="email" id="email" required placeholder="">
+              <input type="email" id="email" required placeholder="name@company.com">
             </div>
             <div class="form-group">
               <label for="message">Сообщение</label>
-              <textarea id="message" required placeholder=""></textarea>
+              <textarea id="message" required placeholder="Ваше сообщение..."></textarea>
             </div>
             <button type="submit" id="submitBtn" class="btn btn-primary">
               <span class="btn-text">Отправить сообщение</span>
@@ -167,6 +199,7 @@
         </div>
       </div>
     </section>
+
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
