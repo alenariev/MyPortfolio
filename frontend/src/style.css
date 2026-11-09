@@ -284,13 +284,6 @@ h1 {
     gap: 30px;
 }
 
-/* Это правило растянет третий элемент на всю ширину сетки, если их всего три */
-.card-grid .card:last-child {
-    grid-column: span 2; /* Растягивает на 2 колонки */
-    max-width: 50%;      /* Делает его ширину равной одной колонке */
-    margin: 0 auto;      /* Центрирует блок */
-}
-
 .card, .project-card {
     background-color: var(--bg-white);
     padding: 40px;
