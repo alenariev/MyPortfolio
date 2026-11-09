@@ -284,6 +284,7 @@ h1 {
     gap: 30px;
 }
 
+
 .card, .project-card {
     background-color: var(--bg-white);
     padding: 40px;
@@ -489,16 +490,6 @@ h1 {
 }
 
 /* --- АДАПТИВНОСТЬ ДЛЯ МОБИЛЬНЫХ УСТРОЙСТВ --- */
-
-/* Логика для компьютера (экраны больше 900px) */
-@media (min-width: 901px) {
-    .card-grid .card:last-child {
-        grid-column: 1 / -1;
-        max-width: 520px;
-        margin: 0 auto;
-        width: 100%;
-    }
-}
 
 /* Логика для смартфонов и планшетов (экраны до 900px) */
 @media (max-width: 900px) {
